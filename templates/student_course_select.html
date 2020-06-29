@@ -1,0 +1,9 @@
+{% extends 'student.html' %}
+{% from 'bootstrap/form.html' import render_form %}
+{% from 'bootstrap/table.html' import render_table %}
+
+{% block content %}
+    {{ render_form(form, form_type="inline") }}
+    <br>
+    {{ render_table(messages, titles=titles, primary_key='cno') }}
+{% endblock %}

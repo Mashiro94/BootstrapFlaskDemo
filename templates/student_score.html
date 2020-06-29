@@ -1,0 +1,6 @@
+{% extends 'student.html' %}
+{% from 'bootstrap/table.html' import render_table %}
+
+{% block content %}
+    {{ render_table(messages, titles=titles) }}
+{% endblock %}

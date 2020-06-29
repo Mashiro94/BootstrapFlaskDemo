@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% from 'bootstrap/nav.html' import render_nav_item %}
+
+{% block head %}
+    {{ render_nav_item('teacher', tno, tno=tno) }}
+    {{ render_nav_item('teacher_account', '修改密码', tno=tno) }}
+    {{ render_nav_item('teacher_course', '浏览课程', tno=tno) }}
+    {{ render_nav_item('teacher_score', '成绩录入', tno=tno) }}
+    {{ render_nav_item('index', '退出登录') }}
+{% endblock %}
